@@ -1,8 +1,42 @@
-.MenuClass {
-    border: none;
+body{
+    margin: 0px;
+    background-color: rgb(25, 25, 25);
+    color: rgb(240, 240, 240);
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.MenuClassList {
+.Menu {
+    display: inline-flex;
+    justify-content: center;
+    width: 100%;
+    overflow: hidden;
+}
+
+.Menu a, .MenuButton {
+    width: 130px;
+    padding: 5px 0px;
+    margin: 5px 5px 5px 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(65, 65, 65);
+    color:rgb(240, 240, 240);
+    font-size: large;
+    text-align: center;
+    text-decoration: none;
+}
+
+.MenuList {
     display: none;
     position: absolute;
+    width: 130px;
+    margin: 0px 5px;
+    padding: 5px 0px;
+    border-radius: 5px;
+    background-color: rgb(65, 65, 65);
+    color:rgb(240, 240, 240);
+    text-align: center;
+}
+
+.MenuClassDrop:hover .MenuClassList {
+    display: block;
 }
